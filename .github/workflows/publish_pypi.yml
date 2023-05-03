@@ -26,4 +26,4 @@ jobs:
           TWINE_REPOSITORY: testpypi
         run: 
           python -m build
-          twine upload dist/*.whl
+          python -m twine upload dist/*.whl
