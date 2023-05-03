@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -U build twine nyxus>=0.5.0
+          pip install -U build twine 
       - name: Publish to PyPi
         env:
           TWINE_USERNAME: __token__
