@@ -24,7 +24,7 @@ sys.setrecursionlimit(10000)
 
 # -- Project information -----------------------------------------------------
 
-project = 'filepattern'
+project = 'napari-nyxus'
 author = 'Jesse McKinzie'
 
 # -- General configuration ---------------------------------------------------
@@ -39,16 +39,6 @@ extensions = [
     'sphinx.ext.autosummary',
     'autodocsumm'
 ]
-
-install_requires = [
-    'gcc>=8.0'
-]
-
-autodoc_mock_imports = ["backend"]
-
-# uncomment to enable doxygen docs
-subprocess.call('doxygen', shell=True)
-# html_extra_path = ['doc/html']
 
 napoleon_use_param = True
 
